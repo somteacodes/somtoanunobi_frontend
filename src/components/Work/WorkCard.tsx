@@ -10,7 +10,7 @@ const WorkCard = ({ project }: { project: ProjectEntity }) => {
       {/* image */}
       <img
         src={
-          import.meta.env.VITE_BACKEND_URL +
+           
           project.attributes.images?.data?.[0]?.attributes?.url
         }
         className="w-full h-48 object-cover"
@@ -41,9 +41,10 @@ const WorkCard = ({ project }: { project: ProjectEntity }) => {
         cursor-pointer 
         hover:shadow-lg hover:-translate-y-1 transform transition duration-300 ease-in-out
         bg-center bg-cover border-2 border-white
+        bg-white
         "
                 style={{
-                  backgroundImage: `url(${import.meta.env.VITE_BACKEND_URL}${
+                  backgroundImage: `url(${
                     technology.attributes.icon?.data.attributes.url
                   })`,
                 }}
