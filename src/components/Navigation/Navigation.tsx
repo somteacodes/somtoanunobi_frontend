@@ -16,8 +16,8 @@ const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-green-300/20
-    dark:bg-gray-900/20 backdrop-filter backdrop-blur-sm
+    <header className="fixed inset-x-0 top-0 z-50 bg-green-900/70
+    dark:bg-black/50 backdrop-filter backdrop-blur-sm
     ">
       <nav
         className="flex items-center justify-between p-6 lg:px-8"
@@ -33,7 +33,7 @@ const Navigation = () => {
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+            <Bars3Icon className="h-6 w-6 text-white" aria-hidden="true" />
           </button>
         </div>
       </nav>
@@ -45,7 +45,10 @@ const Navigation = () => {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto 
+        bg-green-900/70
+        dark:bg-black/50 backdrop-filter backdrop-blur-sm
+        px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-end">
             
             <button
@@ -54,7 +57,7 @@ const Navigation = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+              <XMarkIcon className="h-6 w-6 text-white" aria-hidden="true" />
             </button>
           </div>
           <div className="mt-6 flow-root">
@@ -71,7 +74,7 @@ const Navigation = () => {
                     duration={500}
                     key={item.name} 
                     onClick={() => setMobileMenuOpen(false)}                   
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-green-100 hover:text-gray-900 cursor-pointer first-letter:
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-green-100 hover:text-gray-900 cursor-pointer first-letter:
                     
                     "
                   >

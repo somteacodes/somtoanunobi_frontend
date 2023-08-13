@@ -1,6 +1,6 @@
 /// <reference types="vite/client" />
 type Project = {
-  data?: ProjectEntity[] | null;
+  data: ProjectEntity[] | [];
   meta: Meta;
 };
 type ProjectEntity = {

@@ -8,14 +8,11 @@ const WorkCard = ({ project }: { project: ProjectEntity }) => {
      cursor-pointer
     hover:shadow-lg hover:-translate-y-1 transform transition duration-300 ease-in-out
     "
-    to={`/works/${project.attributes.slug}`}
+      to={`/works/${project.attributes.slug}`}
     >
       {/* image */}
       <img
-        src={
-           
-          project.attributes.images?.data?.[0]?.attributes?.url
-        }
+        src={project.attributes.images?.data?.[0]?.attributes?.url}
         className="w-full h-48 object-cover"
         alt=""
       />
@@ -43,17 +40,15 @@ const WorkCard = ({ project }: { project: ProjectEntity }) => {
                 className="group relative mt-6 h-6 w-6   rounded-full
         cursor-pointer 
         hover:shadow-lg hover:-translate-y-1 transform transition duration-300 ease-in-out
-        bg-center bg-cover border-2 border-white
-        bg-white
+        bg-center bg-contain border-2 border-white bg-no-repeat
+        bg-white  p-1
         "
                 style={{
-                  backgroundImage: `url(${
-                    technology.attributes.icon?.data.attributes.url
-                  })`,
+                  backgroundImage: `url(${technology.attributes.icon?.data.attributes.url})`,
                 }}
                 key={technology.id}
               >
-                <span className="pointer-events-none absolute -top-7 whitespace-nowrap opacity-0 transition-opacity group-hover:opacity-100 text-sm">
+                <span className="pointer-events-none absolute -top-7 -left-2 whitespace-nowrap opacity-0 transition-opacity group-hover:opacity-100 text-sm">
                   {technology.attributes.name}
                 </span>
               </div>
