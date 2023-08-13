@@ -1,5 +1,10 @@
 export default {
     main: {
+      base: {
+        path: "/",
+        name: "Base",
+        visible: false,
+      },
       home: {
         path: "/",
         name: "Home",
@@ -15,6 +20,11 @@ export default {
         name: "Work",
         visible: true,
       },
+      works:{
+        path: "/works",
+        name: "Works",
+        visible: false,
+      }
     },
   };
   

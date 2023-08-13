@@ -1,4 +1,3 @@
-import blogBackground from "../../assets/blog.svg";
 import BlogCard from "./BlogCard";
 
 const BlogSection = () => {

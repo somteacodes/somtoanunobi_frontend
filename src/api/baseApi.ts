@@ -17,7 +17,9 @@ const baseApi = createApi({
     credentials: "include",
   }),
   tagTypes: [
-    "Projects", 
+    "Projects",
+    "Bio",
+    "Blogs",
   ],
   endpoints: () => ({}),
 });

@@ -6,7 +6,11 @@ const projectApi = baseApi.injectEndpoints({
       query: (searchParams) => `/projects${searchParams}`,
       providesTags: ["Projects"],
     }),
+    getProjectBySlug: builder.query<Project, string>({
+      query: (slug) => `/projects/${slug}`,
+      providesTags:  (result, error, slug) => [{ type: "Projects", id: slug }],
+    }),
   }),
 });
 
-export const { useGetProjectsQuery } = projectApi;
+export const { useGetProjectsQuery, useGetProjectBySlugQuery } = projectApi;

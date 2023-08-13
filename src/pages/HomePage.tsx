@@ -6,8 +6,8 @@ import WorkSection from "../components/Work/WorkSection";
 import { Element } from "react-scroll";
 const HomePage = () => {
   return (
-    <main className="relative text-gray-900 dark:text-gray-50">
-      <Navigation />
+    <>
+      {/* <Navigation /> */}
       <Element name="home">
         <Hero />
       </Element>
@@ -22,7 +22,7 @@ const HomePage = () => {
         {" "}
         <ContactSection />
       </Element>
-    </main>
+    </>
   );
 };
 

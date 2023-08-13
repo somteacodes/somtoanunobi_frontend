@@ -1,6 +1,6 @@
 import Skeleton from "react-loading-skeleton";
 import { useGetProjectsQuery } from "../../api/projectApi";
-import workBackground from "../../assets/work.svg";
+ 
 import WorkCard from "./WorkCard";
 const WorkSection = () => {
    
@@ -71,6 +71,9 @@ const WorkSection = () => {
           </div>
         </div>
         {/* right */}
+        {
+          latestProjectsError && <p>Something went wrong</p>
+        }
         <div className="lg:w-2/3">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {latestProjectsFetching || latestProjectsLoading ? (

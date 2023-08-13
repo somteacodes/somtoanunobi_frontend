@@ -1,11 +1,14 @@
+import { Link } from "react-router-dom";
+
 const WorkCard = ({ project }: { project: ProjectEntity }) => {
   return (
-    <div
+    <Link
       className=" rounded-md overflow-hidden shadow bg-white
     dark:bg-gray-700
      cursor-pointer
     hover:shadow-lg hover:-translate-y-1 transform transition duration-300 ease-in-out
     "
+    to={`/works/${project.attributes.slug}`}
     >
       {/* image */}
       <img
@@ -58,7 +61,7 @@ const WorkCard = ({ project }: { project: ProjectEntity }) => {
           )}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 <div className="p-10"></div>;

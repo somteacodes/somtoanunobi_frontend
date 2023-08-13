@@ -1,7 +1,5 @@
 import { ArrowDownIcon } from "@heroicons/react/24/solid";
-import heroBackground from "../../assets/hero.svg";
 import avatar from "../../assets/somto_avatar.jpg";
-import Social from "../Social/Social";
 import { Link } from "react-scroll";
 const Hero = () => {
   return (
