@@ -1,7 +1,6 @@
 import BlogSection from "../components/Blog/BlogSection";
 import ContactSection from "../components/Contact/ContactSection";
-import Hero from "../components/Hero/Hero";
-import Navigation from "../components/Navigation/Navigation";
+import Hero from "../components/Hero/Hero"; 
 import WorkSection from "../components/Work/WorkSection";
 import { Element } from "react-scroll";
 const HomePage = () => {

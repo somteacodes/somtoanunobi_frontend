@@ -8,7 +8,7 @@ const projectApi = baseApi.injectEndpoints({
     }),
     getProjectBySlug: builder.query<Project, string>({
       query: (slug) => `/projects/${slug}`,
-      providesTags:  (result, error, slug) => [{ type: "Projects", id: slug }],
+      providesTags:  (_result, _error, slug) => [{ type: "Projects", id: slug }],
     }),
   }),
 });
